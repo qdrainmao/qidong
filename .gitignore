@@ -1,2 +1,16 @@
 client/
 server/.idea/
+server/account/target/
+server/common/target/
+server/fastdfs/target/
+server/management/target/
+server/seckill/target/
+server/test/target/
+
+server/account/account.iml
+server/common/common.iml
+server/fastdfs/fastdfs.iml
+server/management/management.iml
+server/parent/parent.iml
+server/seckill/seckill.iml
+server/test/test.iml
