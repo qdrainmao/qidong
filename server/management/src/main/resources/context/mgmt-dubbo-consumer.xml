@@ -10,5 +10,5 @@
     <dubbo:application name="mgmt_consumer" default="false"/>
     <dubbo:registry address="zookeeper://192.168.0.103:2181" />
     
-    <dubbo:reference interface="com.account.service.dubbo.UserDubboService" id="userDubboService" check="false"></dubbo:reference>
+    <!--<dubbo:reference interface="com.account.service.dubbo.UserDubboService" id="userDubboService" check="false"></dubbo:reference>-->
 </beans>

@@ -34,7 +34,7 @@ public class CustomerServiceImpl implements CustomerService {
     public void addCustomer(BaseRequest<AddCustomerRequest> baseRequest) {
         Customer customer = new Customer();
         BeanUtil.copyProperties(baseRequest.getParam(), customer);
-        customer.setBaseEntity("陆天一");
-        int i = customerMapper.insertSelective(customer);
+//        customer.setBaseEntity("陆天一");
+//        int i = customerMapper.insertSelective(customer);
     }
 }

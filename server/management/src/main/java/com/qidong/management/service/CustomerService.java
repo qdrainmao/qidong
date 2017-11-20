@@ -7,7 +7,7 @@ import com.qidong.management.vo.resp.CustomerResponse;
 import java.util.List;
 
 public interface CustomerService {
-    List<CustomerResponse> getCustomerList(BaseRequest baseRequest);
-
-    void addCustomer(BaseRequest<AddCustomerRequest> baseRequest);
+//    List<CustomerResponse> getCustomerList(BaseRequest baseRequest);
+//
+//    void addCustomer(BaseRequest<AddCustomerRequest> baseRequest);
 }
