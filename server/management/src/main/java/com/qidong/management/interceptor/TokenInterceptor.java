@@ -26,8 +26,8 @@ import java.nio.charset.Charset;
 public class TokenInterceptor extends HandlerInterceptorAdapter {
     private static final Logger LOGGER = LoggerFactory.getLogger(TokenInterceptor.class);
 
-    @Autowired
-    private RedisClusterService redisClusterService;
+    /*@Autowired
+    private RedisClusterService redisClusterService;*/
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -47,7 +47,7 @@ public class TokenInterceptor extends HandlerInterceptorAdapter {
         BaseRequest baseRequest = ReflectUtil.getInstance(body, BaseRequest.class);
         String token = baseRequest.getToken();
 
-        UserDto redis = redisClusterService.getRedis(TypeEnum.TYPE_USER.getName(), token, UserDto.class);
+        UserDto redis = null;//redisClusterService.getRedis(TypeEnum.TYPE_USER.getName(), token, UserDto.class);
         if (redis != null){
             return true;
         }else {
