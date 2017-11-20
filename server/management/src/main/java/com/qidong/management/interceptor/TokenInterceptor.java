@@ -1,18 +1,8 @@
 package com.qidong.management.interceptor;
 
 import com.alibaba.dubbo.common.json.JSON;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.qidong.base.BaseRequest;
-import com.qidong.base.dto.UserDto;
-import com.qidong.base.enums.TypeEnum;
-import com.qidong.base.service.RedisClusterService;
-import com.qidong.base.service.impl.RedisClusterServiceImpl;
-import com.qidong.utils.util.ReflectUtil;
-import org.json.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
 import javax.servlet.ServletInputStream;
@@ -44,7 +34,7 @@ public class TokenInterceptor extends HandlerInterceptorAdapter {
         String body = sb.toString();
         LOGGER.info("接口请求数据：{}", body);
 
-        BaseRequest baseRequest = ReflectUtil.getInstance(body, BaseRequest.class);
+       /* BaseRequest baseRequest = ReflectUtil.getInstance(body, BaseRequest.class);
         String token = baseRequest.getToken();
 
         UserDto redis = null;//redisClusterService.getRedis(TypeEnum.TYPE_USER.getName(), token, UserDto.class);
@@ -53,6 +43,7 @@ public class TokenInterceptor extends HandlerInterceptorAdapter {
         }else {
             LOGGER.error(JSON.json(body));
             throw new RuntimeException();
-        }
+        }*/
+       return true;
     }
 }
