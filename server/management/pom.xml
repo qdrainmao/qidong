@@ -30,11 +30,11 @@
   </properties>
 
   <dependencies>
-    <dependency>
+    <!--<dependency>
       <groupId>com.qidong</groupId>
       <artifactId>common</artifactId>
       <version>${project.version}</version>
-    </dependency>
+    </dependency>-->
     <!--${project.version}-->
     <!--common-->
     <dependency>
