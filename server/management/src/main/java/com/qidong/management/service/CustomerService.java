@@ -1,8 +1,5 @@
 package com.qidong.management.service;
 
-import com.qidong.base.BaseRequest;
-import com.qidong.management.vo.req.AddCustomerRequest;
-import com.qidong.management.vo.resp.CustomerResponse;
 
 import java.util.List;
 

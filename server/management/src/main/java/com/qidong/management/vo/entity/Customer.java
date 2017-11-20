@@ -1,6 +1,5 @@
 package com.qidong.management.vo.entity;
 
-import com.qidong.base.entity.BaseEntity;
 
 public class Customer /*extends BaseEntity */{
     private Integer id;
